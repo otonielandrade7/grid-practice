@@ -1,0 +1,142 @@
+body,
+html {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+/* HEADER */
+nav,
+ul,
+li,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  background-color: antiquewhite;
+  align-items: center;
+  padding: 0 1em;
+}
+.navbar-link {
+  text-decoration: none;
+}
+.navbar-item {
+  padding: 1em;
+  list-style: none;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+.navbar-item:hover {
+  background-color: aquamarine;
+}
+.header ul {
+  display: flex;
+  margin: 0 1em;
+}
+/* MAIN */
+main {
+  margin-top: 3em;
+  flex: 1 0 auto;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rounded {
+  border-radius: 50%;
+}
+.presentation {
+  background-color: #f5f5dc;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  padding: 0 2em;
+  border-radius: 4px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 300px 600px;
+  grid-gap: 3px;
+}
+.grid > * {
+  margin: 3em 0;
+}
+.photo-div {
+  display: flex;
+  justify-content: center;
+}
+.photo {
+  align-self: center;
+}
+.text-div {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.large-text{
+    word-wrap: break-word;
+    width: auto;
+    
+}
+.tag {
+  margin: 0;
+}
+footer {
+  background-color: blue;
+  text-align: center;
+  color: white;
+}
+@media (max-width: 979px) {
+  /* Selectors and styles affecting screens UP TO 979px (Desktop) */
+  .grid {
+    grid-template-columns: 100%;
+    justify-content: center;
+  }
+  .grid > * {
+    margin: 1em 0;
+  }
+  .presentation {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Selectors and styles affecting screens UP TO 767px (Tablet) */
+  body,
+  html {
+    font-size: 14px;
+  }
+  main {
+    margin-top: 3em;
+  }
+  .grid {
+    grid-template-columns: 100%;
+    justify-content: center;
+}
+.grid > * {
+    margin: 1em 0;
+  }
+  .presentation {
+    width: 80%;
+  }
+}
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 300px;
+    justify-content: center;
+  }
+}
