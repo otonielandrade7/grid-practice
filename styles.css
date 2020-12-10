@@ -64,11 +64,13 @@ main {
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
   padding: 0 2em;
   border-radius: 4px;
+  width: 80%;
 }
 .grid {
   display: grid;
   grid-template-columns: 300px 600px;
   grid-gap: 3px;
+  justify-content: center;
 }
 .grid > * {
   margin: 3em 0;
